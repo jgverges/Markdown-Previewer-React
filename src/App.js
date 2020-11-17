@@ -3,7 +3,9 @@ import React from 'react';
 import { Form, FormGroup,Input, Label} from 'reactstrap';
 import marked from 'marked';
 
-
+marked.setOptions({
+  breaks: true
+});
 
 class Markdown extends React.Component {
    getMarkdownText() {
